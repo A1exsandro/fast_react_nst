@@ -16,11 +16,13 @@
 
 <!-- REACT -->
 # REACT
+* npm create vite@latest - apenas na criação
+* npm install
+* npm run dev
 
 # Tailwind
 * npm install -D tailwindcss
 * npx tailwindcss init
-* npx tailwindcss -i ./src/static/css/layout.css -o ./src/static/css/output.css --watch
 
 <!-- GIT -->
 # GIT
