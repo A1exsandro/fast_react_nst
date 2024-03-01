@@ -9,7 +9,7 @@ interface WordProps {
 const Word: React.FC<WordProps> = ({word}) => {
 
     return (
-        <div className="border-solid border-2 border-indigo-600 w-96 rounded-xl p-3 my-2">
+        <div className="border-solid border-2 border-indigo-600 w-80 rounded-xl p-3 my-2">
             {/* Opposite and Similar */}
             <div className="flex justify-between">
                 <h3 className="">{word.opposite}</h3>

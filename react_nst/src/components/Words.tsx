@@ -24,19 +24,31 @@ const Words = () => {
             similar: 'Could',
             class: '',
             fluency_level: 'beginner',
-        }
+        },
+        {
+            english: 'Big',
+            opposite: 'Small',
+            similar: '',
+            class: 'Adjective',
+            fluency_level: 'beginner',
+        },
     ])
 
     return (
-        <div className="">
-            {
-                words.map((word, i) => (
-                    <Word 
-                        key={i}
-                        word={word}
-                    />
-                ))
-            }
+        <div className="flex flex-col">
+            <div className="bg-blue-500 w-screen p-2 mb-2">
+                <h1 className="text-white font-bold">Words</h1>
+            </div>
+            <div className="flex flex-col items-center">
+                {
+                    words.map((word, i) => (
+                        <Word 
+                            key={i}
+                            word={word}
+                        />
+                    ))
+                }
+            </div>
         </div>
     )
 }
