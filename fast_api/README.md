@@ -17,6 +17,9 @@ uvicorn api.main:app --host=localhost --port=8888 --reload
 # Instalar dependências
 * pip install -r requirements.txt
 
+# Atualizar dependências
+* pip freeze > requirements.txt
+
 # Alguns Comandos git
 * git merge -Xours nome-do-ramo-fonte
 * git merge -Xtheirs nome-do-ramo-fonte
