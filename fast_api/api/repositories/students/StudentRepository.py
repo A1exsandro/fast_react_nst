@@ -37,7 +37,7 @@ class StudentRepository:
             if not data_db:
                 return None
             data_to_update = update_form.model_dump(exclude_unset=True)
-            for key,value in data_to_update.students():
+            for key,value in data_to_update.items():
                 setattr(data_db, key, value)
             session.add(data_db)
             session.commit()
